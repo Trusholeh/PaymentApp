@@ -1,0 +1,54 @@
+﻿@model СustomerApp.Models.Customer
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Customer</h4>
+        <hr />
+
+        <table border="1">
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.CustomerID)</td>
+                <td>@Html.DisplayFor(model => model.CustomerID)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.CustomerName)</th>
+                <th>@Html.DisplayFor(model => model.CustomerName)</th>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.ContactEmail)</td>
+                <td>@Html.DisplayFor(model => model.ContactEmail)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.MobileNumber)</td>
+                <td>@Html.DisplayFor(model => model.MobileNumber)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.RecentTransaction)</td>
+                <td>@Html.DisplayFor(model => model.RecentTransaction)</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+
+    <h2>
+        @Html.ActionLink("Transaction", "", "Transactions", new { id = Model.CustomerID })
+    </h2>
+
+</body>
+</html>

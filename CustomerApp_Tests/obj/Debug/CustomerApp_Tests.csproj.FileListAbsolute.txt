@@ -1,0 +1,2 @@
+C:\Users\trush\source\repos\СustomerApp\CustomerApp_Tests\obj\Debug\CustomerApp_Tests.csprojAssemblyReference.cache
+C:\Users\trush\source\repos\СustomerApp\CustomerApp_Tests\obj\Debug\CustomerApp_Tests.csproj.CoreCompileInputs.cache

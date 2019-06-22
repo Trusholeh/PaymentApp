@@ -1,0 +1,46 @@
+﻿@model СustomerApp.Models.Transaction
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> Transactions details</title>
+</head>
+<body>
+    <div>
+        <h4>Transaction</h4>
+        <hr />
+
+        <table border="1">
+            <tr>
+                <th>@Html.DisplayFor(model => model.DataTime)</th>
+                <th>@Html.DisplayNameFor(model => model.DataTime)</th>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Amount)</td>
+                <td>@Html.DisplayFor(model => model.Amount)</td>
+            </tr>
+            <tr>
+
+                <td>@Html.DisplayNameFor(model => model.CurrencyCode)</td>
+                <td>@Html.DisplayFor(model => model.CurrencyCode)</td>
+            </tr>
+            <tr>
+
+                <td>@Html.DisplayNameFor(model => model.Status)</td>
+                <td>@Html.DisplayFor(model => model.Status)</td>
+            </tr>
+        </table>
+    </div>
+   
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.TransactionID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
